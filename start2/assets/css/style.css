@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+
+main{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+main div {
+    background-color: rgb(202, 200, 197);
+    border-radius: 20px;
+    text-align: center;
+    height: 80vh;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#stop {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+    text-shadow: 2px 2px 5px white;
+}
