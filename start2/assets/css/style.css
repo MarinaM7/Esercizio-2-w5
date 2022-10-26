@@ -1,5 +1,10 @@
+body {
+    color: #ECDBBA;
+}
+
 h1{
     text-align: center;
+    color: #2D4263;
 }
 
 main{
@@ -10,7 +15,7 @@ main{
 }
 
 main div {
-    background-color: rgb(202, 200, 197);
+    background-color: #383838;
     border-radius: 20px;
     text-align: center;
     height: 80vh;
@@ -35,5 +40,22 @@ button:hover{
     font-weight: bold;
     font-style: italic;
     color: red;
-    text-shadow: 2px 2px 5px white;
+    text-shadow: 2px 2px 5px rgb(53, 53, 53);
+}
+
+ul {
+    padding-left: 0;
+    line-height: 2;
+}
+
+#unordered {
+    overflow: auto;
+}
+
+ul li{
+    color: #383838;
+    border: 2px solid #a03b26;
+    border-radius: 5px;
+    margin: 10px 100px;
+    background-color: #c2caa4;
 }

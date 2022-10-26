@@ -2,13 +2,17 @@ var btn = document.getElementById('btn');
 
 var budget = 800;
 
+var array = [];
+
 btn.addEventListener('click', function(){
 
     var generaNumeri = Math.floor(Math.random() * 100);
 
     document.getElementById('lista').innerHTML += `<li> €${generaNumeri} </li>`;
 
-    var array = [generaNumeri];
+    array.push(generaNumeri);
+
+    console.log(array);
 
     var totaleSpesa = array.reduce(funzione);
 
@@ -20,12 +24,15 @@ btn.addEventListener('click', function(){
 
     document.getElementById('rimanente').innerHTML = `Budget rimanente: ${rimanente}`;
 
+    document.getElementById('conteggio').innerHTML = `Conteggio spese eseguite: ${array.length}`;
+
     if (rimanente <= 200) {
-        //disabilita bottone
-        //conteggio spese eseguite
-        document.getElementById('stop').innerHTML = 'A causa dei numerosi acquisti, hai superato il limite di 200€'
+        btn.disabled = true;
+        document.getElementById('stop').innerHTML = 'A causa dei numerosi acquisti, hai superato il limite. <br> La possibiltà di acquistare nuovamente ti è negata! '
     }
 
 });
+
+
 
 //----------------------
